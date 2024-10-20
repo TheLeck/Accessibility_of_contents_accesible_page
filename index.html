@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página accesible sobre recetas de café frío">
+    <title>Recetas de Café Frío</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>Recetas de Café Frío</h1>
+    <p>Explora diferentes tipos de café frío y sus beneficios</p>
+</header>
+
+<main>
+    <!-- Imagen principal -->
+    <section>
+        <h2>Tipos de Café Frío</h2>
+        <img src="./public/coffee_with_ice_cubes.webp" alt="">
+        <p>Los cafés fríos son una opción refrescante para disfrutar de una dosis de energía en los días calurosos.</p>
+    </section>
+
+    <!-- Enlace con imagen adicional -->
+    <section>
+        <h2>Recetas Destacadas</h2>
+        <img src="./public/coffee_cream_with_ice_cubes.webp" alt="">
+        <p>Para ver más recetas, visita nuestro <a href="https://www.google.com" target="_blank" aria-label="Visita el sitio de recetas de café frío">sitio de recetas</a>.</p>
+    </section>
+
+    <!-- Tabla -->
+    <section>
+        <h2>Comparativa de Tipos de Café</h2>
+        <table>
+            <caption>Comparación entre diferentes tipos de café frío</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Tipo de Café</th>
+                    <th scope="col">Sabor</th>
+                    <th scope="col">Cafeína (mg)</th>
+                    <th scope="col">Precio (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cold Brew</td>
+                    <td>Suave, menos ácido</td>
+                    <td>200</td>
+                    <td>3.50</td>
+                </tr>
+                <tr>
+                    <td>Frappuccino</td>
+                    <td>Dulce, cremoso</td>
+                    <td>95</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td>Iced Americano</td>
+                    <td>Intenso, amargo</td>
+                    <td>150</td>
+                    <td>2.50</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario con imagen adicional -->
+    <section>
+        <h2>Suscríbete a nuestro boletín de recetas</h2>
+        <img src="./public/person_preparing_iced_coffee.webp" alt="Imagen de una persona preparando café frío">
+        <form action="#" method="post" aria-labelledby="form-heading">
+            <fieldset>
+                <legend id="form-heading">Formulario de suscripción</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="tipo-cafe">¿Cuál es tu tipo de café frío favorito?</label>
+                <select id="tipo-cafe" name="tipo-cafe">
+                    <option value="coldbrew">Cold Brew</option>
+                    <option value="frappuccino">Frappuccino</option>
+                    <option value="americano">Iced Americano</option>
+                </select>
+                    <br/>
+                <button type="submit">Suscribirme</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Recetas de Café Frío. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
