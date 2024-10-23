@@ -17,7 +17,7 @@
 <main>
     <!-- Imagen principal -->
     <section>
-        <h2>Tipos de Café Frío</h2>
+        <h2>¿Que es el Café Frío?</h2>
         <img src="./public/coffee_with_ice_cubes.webp" alt="">
         <p>Los cafés fríos son una opción refrescante para disfrutar de una dosis de energía en los días calurosos.</p>
     </section>
@@ -26,7 +26,11 @@
     <section>
         <h2>Recetas Destacadas</h2>
         <img src="./public/coffee_cream_with_ice_cubes.webp" alt="">
-        <p>Para ver más recetas, visita nuestro <a href="https://www.google.com" target="_blank" aria-label="Visita el sitio de recetas de café frío">sitio de recetas</a>.</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank" lang="en">Cold Brew</a></li>
+            <li><a href="https://www.google.com" target="_blank" lang="en">Frappuccino</a></li>
+            <li><a href="https://www.google.com" target="_blank" lang="en">Iced Americano</a></li>
+        </ul>
     </section>
 
     <!-- Tabla -->
@@ -67,7 +71,7 @@
 
     <!-- Formulario con imagen adicional -->
     <section>
-        <h2>Suscríbete a nuestro boletín de recetas</h2>
+        <h2>Sugiere una nueva receta</h2>
         <img src="./public/person_preparing_iced_coffee.webp" alt="Imagen de una persona preparando café frío">
         <form action="#" method="post" aria-labelledby="form-heading">
             <fieldset>
@@ -79,14 +83,10 @@
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="tipo-cafe">¿Cuál es tu tipo de café frío favorito?</label>
-                <select id="tipo-cafe" name="tipo-cafe">
-                    <option value="coldbrew">Cold Brew</option>
-                    <option value="frappuccino">Frappuccino</option>
-                    <option value="americano">Iced Americano</option>
-                </select>
+                <label for="sugerencia">¿Cuál es tu café sugerido?</label><br>
+                <input type="text" id="sugerencia" name="sugerencia" required>
                     <br/>
-                <button type="submit">Suscribirme</button>
+                <button type="submit">Enviar sugerencia</button>
             </fieldset>
         </form>
     </section>
