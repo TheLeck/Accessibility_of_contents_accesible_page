@@ -73,7 +73,7 @@
     <section>
         <h2>Sugiere una nueva receta</h2>
         <img src="./public/person_preparing_iced_coffee.webp" alt="Imagen de una persona preparando café frío">
-        <form action="#" method="post" aria-labelledby="form-heading">
+        <form id="suggestionForm" action="#" method="post" aria-labelledby="form-heading">
             <fieldset>
                 <legend id="form-heading">Formulario de sugerencias/legend>
                 
@@ -95,6 +95,14 @@
 <footer>
     <p>&copy; 2024 Recetas de Café Frío. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    document.getElementById('suggestionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío real del formulario
+        alert('Sugerencia enviada');
+        this.reset(); // Opcional: Limpia el formulario después de enviar
+    });
+</script>
 
 </body>
 </html>
